@@ -1,4 +1,4 @@
-// import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import {
   Briefcase,
   HomeIcon,
@@ -56,7 +56,7 @@ async function Header() {
           <p>Messaging</p>
         </Link>
 
-        {/* <SignedIn>
+        <SignedIn>
           <UserButton />
         </SignedIn>
 
@@ -64,7 +64,7 @@ async function Header() {
           <Button asChild variant="secondary">
             <SignInButton />
           </Button>
-        </SignedOut> */}
+        </SignedOut>
       </div>
     </div>
   );
